@@ -1,0 +1,67 @@
+body{
+  padding-top:80px;
+  word-wrap:break-word;
+  background-color: pink;
+  background-image: url("img/shopping.jpg");
+  background-size: cover;
+  font-family: 'Yanone Kaffeesatz', sans-serif
+}
+
+.page-header{
+  padding-bottom: 9px;
+  margin: 0px 0 20px;
+  border-bottom: 1px solid black;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.page-header h1{
+font-size: 7rem;
+}
+
+.jumbotron h1{
+  margin-left: 24%;
+  margin-bottom: 5%;
+}
+
+img{
+  height: 200px;
+}
+
+h1, h2, h3{
+  font-family: 'Dancing Script', cursive;
+}
+
+h1{
+  width: 50%;
+}
+
+h2{
+  width: 50%;
+  float: left;
+  margin-top: -4%;
+}
+
+p{
+  margin-top: 2%;
+  font-size: 3rem;
+}
+
+span{
+  font-size: 2rem;
+}
+
+.cart{
+  width: 50%;
+  float: left;
+}
+
+.col-sm-6{
+
+}
+
+.enter{
+
+}
