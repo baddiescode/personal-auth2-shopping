@@ -27,9 +27,8 @@ Array.from(thumbUp).forEach(function(element) {
 
 Array.from(trash).forEach(function(element) {
       element.addEventListener('click', function(){
-        const name = this.parentNode.parentNode.childNodes[1].innerText
-        const msg = this.parentNode.parentNode.childNodes[3].innerText
-        const totalCart = this.parentNode.parentNode.childNodes[5].textContent
+        const name = this.closest('.message').querySelector('.item').innerText
+        const msg = this.closest('.message').querySelector('.price').innerText
         fetch('messages', {
           method: 'delete',
           headers: {
@@ -38,7 +37,6 @@ Array.from(trash).forEach(function(element) {
           body: JSON.stringify({
             'name': name,
             'msg': msg,
-            'totalCart': totalCart
           })
         }).then(function (response) {
           window.location.reload()
